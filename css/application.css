@@ -616,20 +616,19 @@ nav {
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
-  margin-left: 8.5298%; }
+  margin-left: 8.5298%;
+  margin-bottom: 30px; }
   .description:last-child {
     margin-right: 0; }
 
-.packages {
-  margin-top: 25px; }
-  .packages h1 {
-    text-transform: uppercase;
-    font-size: 4em; }
-  .packages h3 {
-    font-size: 1.3em; }
-  .packages p {
-    line-height: 1.5em;
-    margin: 5px 0; }
+.packages h1 {
+  text-transform: uppercase;
+  font-size: 4em; }
+.packages h3 {
+  font-size: 1.3em; }
+.packages p {
+  line-height: 1.5em;
+  margin: 5px 0; }
 
 .package {
   float: left;
@@ -742,12 +741,13 @@ nav {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-left: 17.05961%;
+    width: 48.82117%;
     margin-right: 0; }
     .container_4 .party-pic:last-child {
       margin-right: 0; }
     .container_4 .party-pic img {
+      float: right;
+      max-height: 250px;
       max-width: 100%;
       border-radius: 100%; }
   .container_4 button {
@@ -780,6 +780,8 @@ nav {
   height: 500px;
   padding: 10px 20px; }
   .month:last-child {
+    margin-right: 0; }
+  .month:nth-child(5) {
     margin-right: 0; }
   .month p {
     line-height: 1.3em;

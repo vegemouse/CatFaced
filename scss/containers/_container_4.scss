@@ -9,11 +9,11 @@
   }
 
   .party-pic {
-    @include span-columns(4);
-    @include shift(2);
-    @include omega;
-
+    @include span-columns(6);
+    @include omega();
     img {
+      float: right;
+      max-height: 250px;
       max-width: 100%;
       border-radius: 100%;
     }
@@ -25,6 +25,7 @@
 
 .month {
   @include span-columns(4);
+  @include omega(5);
   margin-top: 20px;
   border-radius: 15px;
   background-color: white;
