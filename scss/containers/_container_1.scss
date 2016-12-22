@@ -18,13 +18,19 @@
   color: $light-purple;
   h1 {
     margin: 0;
-    font-size: 4em;
     line-height: 1em;
     text-transform: uppercase;
+    @media #{$break-tablet} {
+      font-size: 3em;
+    }
   }
   h3 {
     font-family: $subheader-font;
     font-size: 1.5em;
+  }
+  @media #{$break-tablet} {
+    @include span-columns(7 of 12);
+    @include shift(5);
   }
 }
 

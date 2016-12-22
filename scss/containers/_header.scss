@@ -44,6 +44,12 @@ nav {
   margin: 0 5px;
 }
 
+#faq {
+  @media #{$break-tablet} {
+    display: none;
+  }
+}
+
 #sign-up {
   @include button(special);
   margin-left: 5px;

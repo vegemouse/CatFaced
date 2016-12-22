@@ -4,6 +4,9 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: 65%;
+  @media #{$break-tablet} {
+    background-size: 130%;
+  }
 }
 
 .learn-box {
@@ -17,18 +20,20 @@
   color: $light-purple;
   h1 {
     margin: 0;
-    font-size: 4.5em;
     line-height: 1em;
     text-transform: uppercase;
   }
   h3 {
     font-family: $subheader-font;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    margin: 0;
   }
   button {
     @include button-small(black);
     margin-left: 50%;
     transform: translateX(-50%);
-
+  }
+  @media #{$break-tablet} {
+    @include shift(6);
   }
 }

@@ -1,0 +1,19 @@
+footer {
+  background-color: black;
+  color: $light-purple;
+}
+
+.column {
+  @include span-columns(4);
+  @include omega(3);
+  padding: 25px;
+  a {
+    display: block;
+    margin-bottom: 7px;
+  }
+}
+
+.social-media {
+  margin-top: 10px;
+  display: flex;
+}
