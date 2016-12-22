@@ -1,0 +1,46 @@
+.container_4 {
+  padding: 40px 0;
+  width: 100vw;
+  background-color: $purple;
+  color: $light-purple;
+
+  .party-description {
+    @include span-columns(6);
+  }
+
+  .party-pic {
+    @include span-columns(4);
+    @include shift(2);
+    @include omega;
+
+    img {
+      max-width: 100%;
+      border-radius: 100%;
+    }
+  }
+  button {
+    @include button-small(black);
+  }
+}
+
+.month {
+  @include span-columns(4);
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: white;
+  height: 500px;
+  padding: 10px 20px;
+  p {
+    line-height: 1.3em;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  }
+}
+
+@each $month in october, november, december {
+  ##{$month} {
+    background: url("../img/#{$month}.jpg");
+    background-size: cover;
+  }
+}

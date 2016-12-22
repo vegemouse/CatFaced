@@ -1,0 +1,50 @@
+nav {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background: $light-purple;
+  width: 100vw;
+}
+
+.nav-content {
+  @include outer-container;
+  padding: 10px 0;
+}
+
+.logo {
+  @include span-columns(6);
+  display: flex;
+  align-items: center;
+  img {
+    height: 90px;
+  }
+  h1 {
+    margin: 0 5px;
+    color: $purple;
+    font-size: 4.5em;
+    text-transform: uppercase;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.menu {
+  @include span-columns(6);
+  margin-top: 13px;
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#faq, #account {
+  @include button;
+  margin: 0 5px;
+}
+
+#sign-up {
+  @include button(special);
+  margin-left: 5px;
+}

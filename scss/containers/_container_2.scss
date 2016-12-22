@@ -1,0 +1,53 @@
+.container_2 {
+  background-color: $purple;
+  padding: 40px 0;
+  width: 100vw;
+  color: $light-purple;
+}
+
+.description {
+  @include span-columns(10);
+  @include shift(1);
+}
+
+.packages {
+  margin-top: 25px;
+  h1 {
+    text-transform: uppercase;
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  p {
+    line-height: 1.5em;
+    margin: 5px 0;
+  }
+}
+.package {
+  @include span-columns(4);
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 25px;
+  color: black;
+  h1 {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  ul {
+    @include centerX;
+    padding: 0;
+    width: 80%;
+    li {
+      margin: 5px 0;
+    }
+  }
+  button {
+    @include button-small(black);
+    @include centerX;
+
+  }
+}
