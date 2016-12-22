@@ -23,14 +23,29 @@
     @media #{$break-tablet} {
       font-size: 3em;
     }
+    @media #{$break-phone} {
+      font-size: 2em;
+    }
   }
   h3 {
     font-family: $subheader-font;
     font-size: 1.5em;
+    @media #{$break-phone} {
+      font-size: 1.3em;
+    }
   }
   @media #{$break-tablet} {
     @include span-columns(7 of 12);
     @include shift(5);
+  }
+  @media #{$break-phone} {
+    @include span-columns(10 of 12);
+    @include shift(2);
+  }
+  p {
+    @media #{$break-phone} {
+      font-size: 0.85em;
+    }
   }
 }
 
@@ -44,6 +59,10 @@
 #give-a-gift {
   @include button-small;
   margin-right: 20px;
+  @media #{$break-phone} {
+    margin-right: 0;
+    margin-left: 50px;
+  }
 }
 
 #get-started {

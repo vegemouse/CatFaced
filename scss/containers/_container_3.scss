@@ -7,6 +7,9 @@
   @media #{$break-tablet} {
     background-size: 130%;
   }
+  @media #{$break-phone} {
+    background-size: 170%;
+  }
 }
 
 .learn-box {
@@ -35,5 +38,9 @@
   }
   @media #{$break-tablet} {
     @include shift(6);
+  }
+  @media #{$break-phone} {
+    @include span-columns(10);
+    @include shift(2);
   }
 }

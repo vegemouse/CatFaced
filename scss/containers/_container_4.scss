@@ -3,11 +3,26 @@
   width: 100%;
   background-color: $purple;
   color: $light-purple;
+  @media #{$break-phone} {
+    position: relative;
+  }
 
   .party-top, .party-bottom {
     @include span-columns(12);
     display: flex;
     align-items: center;
+  }
+
+  .party-description {
+    z-index: 10;
+    background-color: $purple;
+    @media #{$break-phone} {
+      position: absolute;
+      padding: 20px;
+      width: 60%;
+      top: 0;
+      left: 0;
+    }
   }
 
   .party-pic {
@@ -19,9 +34,15 @@
       max-width: 100%;
       border-radius: 100%;
     }
+    @media #{$break-phone} {
+      display: none;
+    }
   }
   button {
     @include button-small(black);
+    @media #{$break-phone} {
+      @include centerX;
+    }
   }
 }
 
@@ -37,6 +58,13 @@
     text-transform: uppercase;
     color: black;
     text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    @media #{$break-phone} {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 10px;
+      max-width: 150px;
+    }
   }
 }
 
@@ -45,5 +73,24 @@
     background: url("../img/#{$month}.jpg");
     background-size: cover;
     background-position: center;
+  }
+}
+
+#october, #november {
+  @media #{$break-phone} {
+    display: none;
+  }
+}
+
+#december {
+  @media #{$break-phone} {
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    p {
+
+    }
   }
 }

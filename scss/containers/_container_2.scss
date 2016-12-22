@@ -13,6 +13,12 @@
     @include span-columns(12);
     @include shift(0);
   }
+  @media #{$break-phone} {
+    @include span-columns(6);
+    p {
+      font-size: 1em;
+    }
+  }
 }
 
 .packages {
@@ -36,7 +42,6 @@
   h1 {
     margin: 0 -20px;
     text-align: center;
-
   }
   img {
     max-width: 100%;
@@ -54,5 +59,15 @@
     @include button-small(black);
     @include centerX;
 
+  }
+  @media #{$break-phone} {
+    @include span-columns(6);
+    @include omega(2);
+    h1 {
+      font-size: 2em;
+    }
+    ul li {
+      margin: 0px 0;
+    }
   }
 }

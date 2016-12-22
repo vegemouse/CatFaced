@@ -14,6 +14,9 @@ h1 {
   font-family: $header-font;
   text-transform: uppercase;
   font-size: 3em;
+  @media #{$break-phone} {
+    font-size: 2em;
+  }
 }
 
 h3 {

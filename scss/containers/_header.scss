@@ -18,12 +18,19 @@ nav {
   align-items: center;
   img {
     height: 90px;
+    @media #{$break-phone} {
+      height: 60px;
+    }
   }
   h1 {
-    margin: 0 5px;
+    margin: 5px;
     color: $purple;
     font-size: 4.5em;
     text-transform: uppercase;
+    @media #{$break-phone} {
+      margin-top: 10px;
+      font-size: 3em;
+    }
   }
   &:hover {
     cursor: pointer;
@@ -46,6 +53,12 @@ nav {
 
 #faq {
   @media #{$break-tablet} {
+    display: none;
+  }
+}
+
+#account {
+  @media #{$break-phone} {
     display: none;
   }
 }
