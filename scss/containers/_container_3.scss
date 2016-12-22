@@ -1,16 +1,15 @@
 .container_3 {
   width: 100vw;
-  height: 100vh;
-  background: url("../img/container_3.png");
+  background-image: url("../img/container_3.png");
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 75%;
+  background-size: 65%;
 }
 
 .learn-box {
   @include span-columns(6 of 12);
   background-color: $purple;
-  border-radius: 25px;
+  border-radius: 15px;
   box-sizing: border-box;
   margin-top: 50vh;
   transform: translateY(-50%);

@@ -529,14 +529,14 @@ nav {
 .container-content {
   max-width: 1000px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 20px; }
   .container-content::after {
     clear: both;
     content: "";
     display: block; }
 
 .container_1 {
-  height: 100vh;
   width: 100vw;
   background: url("../img/container_1.png");
   background-position: center;
@@ -551,7 +551,7 @@ nav {
   background-color: #673056;
   margin-top: 55vh;
   transform: translateY(-50%);
-  border-radius: 25px;
+  border-radius: 15px;
   box-sizing: border-box;
   padding: 20px;
   color: #ddb3e8; }
@@ -676,11 +676,10 @@ nav {
 
 .container_3 {
   width: 100vw;
-  height: 100vh;
-  background: url("../img/container_3.png");
+  background-image: url("../img/container_3.png");
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 75%; }
+  background-size: 65%; }
 
 .learn-box {
   float: left;
@@ -688,7 +687,7 @@ nav {
   margin-right: 2.35765%;
   width: 48.82117%;
   background-color: #673056;
-  border-radius: 25px;
+  border-radius: 15px;
   box-sizing: border-box;
   margin-top: 50vh;
   transform: translateY(-50%);
@@ -727,27 +726,31 @@ nav {
 
 .container_4 {
   padding: 40px 0;
-  width: 100vw;
+  width: 100%;
   background-color: #673056;
   color: #ddb3e8; }
   .container_4 .party-description {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%; }
+    width: 48.82117%;
+    height: 250px; }
     .container_4 .party-description:last-child {
       margin-right: 0; }
   .container_4 .party-pic {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-right: 0; }
+    width: 23.23176%;
+    margin-left: 25.58941%;
+    margin-right: 0;
+    height: 250px;
+    display: flex;
+    align-items: center; }
     .container_4 .party-pic:last-child {
       margin-right: 0; }
     .container_4 .party-pic img {
-      float: right;
-      max-height: 250px;
+      max-height: 100%;
       max-width: 100%;
       border-radius: 100%; }
   .container_4 button {
@@ -781,8 +784,6 @@ nav {
   padding: 10px 20px; }
   .month:last-child {
     margin-right: 0; }
-  .month:nth-child(5) {
-    margin-right: 0; }
   .month p {
     line-height: 1.3em;
     text-transform: uppercase;
@@ -791,14 +792,17 @@ nav {
 
 #october {
   background: url("../img/october.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 #november {
   background: url("../img/november.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 #december {
   background: url("../img/december.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 /*# sourceMappingURL=application.css.map */
